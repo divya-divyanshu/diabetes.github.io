@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+
+    <title>Output</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .diabetic {
+            color: red;
+        }
+
+        .non-diabetic {
+            color: green;
+        }
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #81beeb;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .diabetic {
+            color: rgb(198, 89, 55);
+        }
+
+        .non-diabetic {
+            color: rgb(19, 144, 19);
+        }
+    </style>
+</head>
+<body>
+<body style="background-color: #6a9f8c35;">
+    <div class="container">
+
+
+
+        <form action="">
+            <h1>Result</h1>
+            <br>
+        {% if data == 1 %}
+            <h2 class="diabetic">You are Diabetic!!!</h2>
+            <h3>Suggested Steps to be Taken: </h3>
+            <ol>
+                <li>Follow a Diabetes Meal Plan: Work with a dietitian to create a balanced meal plan that controls carbohydrate intake and includes a variety of nutrient-dense foods.</li>
+
+                <li>Monitor Blood Sugar Levels: Regularly check blood glucose levels as advised by a healthcare provider to manage and understand how different activities and foods affect blood sugar.</li>
+
+                <li>Take Medications as Prescribed: Adhere to any prescribed medications or insulin therapy schedules without missing doses, and communicate with a healthcare provider about any side effects or concerns.</li>
+
+                <li>Stay Physically Active: Engage in regular physical activity, aiming for at least 150 minutes of moderate-intensity exercise per week, such as walking, biking, or swimming.</li>
+
+                <li>Attend Regular Medical Check-ups: Keep all scheduled appointments with healthcare providers to monitor diabetes management, check for complications, and adjust treatment plans as needed.</li>
+            </ol>
+        {% else %}
+            <h2 class="non-diabetic">You are normal😊. You Are free of Diabetes.</h2>
+            <h3>Suggested Steps to be Taken: </h3>
+           <ol>
+
+                    <li>Maintain a Balanced Diet: Incorporate a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats into daily meals to ensure a well-rounded nutrient intake.</li>
+
+                    <li>Exercise Regularly: Aim for at least 30 minutes of moderate physical activity, such as brisk walking, cycling, or swimming, most days of the week.</li>
+
+                    <li>Monitor Portion Sizes: Be mindful of portion sizes to avoid overeating, which can help maintain a healthy weight and prevent insulin resistance.</li>
+
+                    <li>Stay Hydrated: Drink plenty of water throughout the day and limit sugary drinks like soda and fruit juices, which can contribute to blood sugar spikes.</li>
+
+                    <li>Get Regular Check-ups: Schedule regular visits with a healthcare provider to monitor blood sugar levels and overall health, catching any potential issues early.</li>
+           </ol>
+        {% endif %}
+        </form>
+
+
+    </div>
+
+    </body>
+</html>
